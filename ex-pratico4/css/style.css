@@ -27,6 +27,17 @@ header h1{
 
 .navbar ul li{
     padding: 20px;
+    list-style-type: none;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar ul li a:hover{
+    text-decoration: underline;
+    background-color: aqua;
 }
 
 .conteudo{
