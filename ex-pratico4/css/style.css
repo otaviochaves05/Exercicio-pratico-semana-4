@@ -76,28 +76,25 @@ aside h1{
 main{
     border: 1px solid black;
     width: 100%;
-    background-color: aqua;
-    display: flex;
-    flex-wrap: wrap;
 }
 
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 900px;
+    margin: 50px auto;
+    grid-gap: 20px;
+}
 
 .banner{
+    grid-column: 1/4;
+    grid-row: 1;
+}
     
-}
-
-.grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: auto;
-}
-
-
-
-
-
 .card{
-    text-align: center; 
+    border: 1px solid gray;
+    grid-row: 2;
 }
 
 
@@ -112,6 +109,7 @@ img{
 /*----------------------------------------------*/
 .conteudo{
     display: flex;
+    flex-direction: row;
     border: 1px solid black;
 }
 
