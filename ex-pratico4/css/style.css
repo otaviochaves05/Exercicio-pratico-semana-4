@@ -75,23 +75,35 @@ aside h1{
 /*----------------------------------------------*/
 main{
     border: 1px solid black;
-    width: 75%;
-
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
-.container{
+.banner{
     
 }
 
-.card{
+.grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
 }
 
-.img{
+
+
+
+
+.card{
+    text-align: center; 
+}
+
+
+
+img{
     max-width: 100%;
-    display: inline-block;
 }
 
 
