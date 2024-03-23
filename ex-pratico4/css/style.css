@@ -6,6 +6,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+html{
+    height: 100%;
+}
+/*----------------------------------------------*/
 header{
     border: 1px solid black;
     display: flex;
@@ -18,7 +22,7 @@ header h1{
     margin: auto 20px;
 }
 
-
+/*----------------------------------------------*/
 .navbar  ul{
     display: flex;
     flex-wrap: row;
@@ -39,16 +43,65 @@ header h1{
     text-decoration: underline;
     background-color: aqua;
 }
-
-.conteudo{
-    border: 1px solid black;
-}
+/*----------------------------------------------*/
 
 aside{
     border: 1px solid black;
+    width: 20%;
+    text-align: center;
+    
 }
 
+aside h1{
+    padding: 40px 0px;
+}
+
+.categorias{
+    list-style-type: none; 
+}
+
+.categorias li {
+    padding: 10px;
+    border: 1px solid gray; 
+    width: 70%;
+    margin: auto; 
+}
+
+.categorias li a{
+    text-decoration: none;   
+}
+
+
+/*----------------------------------------------*/
 main{
     border: 1px solid black;
+    width: 75%;
+
 }
+
+
+.container{
+    
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+
+.img{
+    max-width: 100%;
+    display: inline-block;
+}
+
+
+
+
+/*----------------------------------------------*/
+.conteudo{
+    display: flex;
+    border: 1px solid black;
+}
+
+
 
