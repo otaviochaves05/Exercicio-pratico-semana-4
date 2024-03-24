@@ -10,10 +10,6 @@ html {
     height: 100%;
 }
 
-/*----------------------------------------------*/
-
-
-
 @media screen and (min-width:601px) {
 
     header {  
@@ -28,7 +24,6 @@ html {
         margin: auto 64px;
     }
 
-    /*----------------------------------------------*/
     .navbar ul {
         display: flex;
         flex-wrap: row;
@@ -48,8 +43,6 @@ html {
     .navbar ul li a:hover {
         text-decoration: underline;   
     }
-
-    /*----------------------------------------------*/
 
     aside {   
         width: 30%;
@@ -75,12 +68,9 @@ html {
         text-decoration: none;
     }
 
-
-    /*----------------------------------------------*/
     main {    
         width: 100%;
     }
-
 
     .container {
         display: grid;
@@ -117,10 +107,6 @@ html {
         max-width: 100%;
     }
 
-
-
-
-    /*----------------------------------------------*/
     .conteudo {
         display: flex;
         flex-direction: row; 
