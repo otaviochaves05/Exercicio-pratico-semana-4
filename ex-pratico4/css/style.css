@@ -6,119 +6,130 @@
     font-family: "Wix Madefor Text", sans-serif;
 }
 
-html{
+html {
     height: 100%;
 }
-/*----------------------------------------------*/
-header{
-    border: 1px solid black;
-    display: flex;
-    flex-wrap: row;
-    justify-content: space-between;
-    
-}
-
-header h1{
-    margin: auto 20px;
-}
 
 /*----------------------------------------------*/
-.navbar  ul{
-    display: flex;
-    flex-wrap: row;
-    
+
+
+
+@media screen and (min-width:601px) {
+
+    header {  
+        display: flex;
+        flex-wrap: row;
+        justify-content: space-between;
+        background-color: #1d1d1d;
+        color: white;
+    }
+
+    header h1 {
+        margin: auto 64px;
+    }
+
+    /*----------------------------------------------*/
+    .navbar ul {
+        display: flex;
+        flex-wrap: row;
+    }
+
+    .navbar ul li {
+        padding: 24px;
+        list-style-type: none;
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        padding: 16px;
+        color: white;
+    }
+
+    .navbar ul li a:hover {
+        text-decoration: underline;   
+    }
+
+    /*----------------------------------------------*/
+
+    aside {   
+        width: 30%;
+        text-align: center;
+    }
+
+    aside h1 {
+        padding: 32px 0px;
+    }
+
+    .categorias {
+        list-style-type: none;
+    }
+
+    .categorias li {
+        padding: 10px;
+        border: 1px solid gray;
+        width: 70%;
+        margin: auto;
+    }
+
+    .categorias li a {
+        text-decoration: none;
+    }
+
+
+    /*----------------------------------------------*/
+    main {    
+        width: 100%;
+    }
+
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 900px;
+        margin: 50px auto;
+        grid-gap: 20px;
+    }
+
+    .banner {
+        grid-column: 1/4;
+        grid-row: 1;
+    }
+
+    .card {
+        border: 1px solid gray;
+        grid-row: 2;
+    }
+
+    .sobre {
+        padding: 10px;
+    }
+
+    .sobre a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .sobre a:hover{
+        text-decoration: underline;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+
+
+
+    /*----------------------------------------------*/
+    .conteudo {
+        display: flex;
+        flex-direction: row; 
+    }
+
+    #shop-name {
+        font-size: 300%;
+        font-weight: lighter;
+        padding-top: 64px;
+    }
+
 }
-
-.navbar ul li{
-    padding: 20px;
-    list-style-type: none;
-}
-
-.navbar ul li a{
-    text-decoration: none;
-    padding: 10px;
-}
-
-.navbar ul li a:hover{
-    text-decoration: underline;
-    background-color: aqua;
-}
-/*----------------------------------------------*/
-
-aside{
-    border: 1px solid black;
-    width: 30%;
-    text-align: center;
-    
-}
-
-aside h1{
-    padding: 40px 0px;
-}
-
-.categorias{
-    list-style-type: none; 
-}
-
-.categorias li {
-    padding: 10px;
-    border: 1px solid gray; 
-    width: 70%;
-    margin: auto; 
-}
-
-.categorias li a{
-    text-decoration: none;   
-}
-
-
-/*----------------------------------------------*/
-main{
-    border: 1px solid black;
-    width: 100%;
-}
-
-
-.container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    max-width: 900px;
-    margin: 50px auto;
-    grid-gap: 20px;
-}
-
-.banner{
-    grid-column: 1/4;
-    grid-row: 1;
-}
-    
-.card{
-    border: 1px solid gray;
-    grid-row: 2;
-    
-}
-
-.sobre{
-    padding: 10px;
-}
-
-
-
-
-
-
-img{
-    max-width: 100%;
-}
-
-
-
-
-/*----------------------------------------------*/
-.conteudo{
-    display: flex;
-    flex-direction: row;
-    border: 1px solid black;
-}
-
-
