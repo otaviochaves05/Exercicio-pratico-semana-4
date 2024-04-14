@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: bisque;
+}
+main{
+    background-color: darksalmon;
+    float: left;
+    width: 70%;
+}
+aside{
+    background-color: blanchedalmond;
+    float: left;
+    width: 30%;
+    padding: 10px;
+}
+/*Cabecalho*/
+.cabecalho ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+
+/*Barra lateral*/
+.barra-lateral ul{
+    list-style-type: none;
+}
+/*Conteudo principal*/

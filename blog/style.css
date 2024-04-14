@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    height: 150px;
+    padding: 20px;
+    background: url(images/logo.png) no-repeat;
+    background-size: 15%;
+}
+
+main{
+    background-color: blanchedalmond;
+    width: 80%;
+    float: left;
+    padding: 20px;
+}
+
+h1{
+
+}
+
+aside{
+    background-color: burlywood;
+    width: 20%;
+    float: left;
+    padding: 20px;
+}
+
+footer{
+    background-color: chocolate;
+    clear: both;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+
+/*Caixa menu principal*/
+.caixa-menuprincipal{
+    float: right;
+}
+
+.caixa-menuprincipal ul{
+    list-style-type: none;
+    
+}
+
+.caixa-menuprincipal ul li{
+    display: inline-block;
+    
+}
+
+.caixa-menuprincipal ul li a{
+    text-decoration: none;
+    background-color: bisque;
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+
+}
+.caixa-menuprincipal ul li a:hover{
+    background-color: blue;
+}
+
+
+/*Caixa post*/
+.caixa-post{
+    clear: both;
+}
+
+.caixa-post h4{
+    font-size: 70%;
+    color: gray;
+}
+
+.caixa-post h4 span:nth-child(3){
+    background-color: navy;
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.caixa-post p{
+    font-size: 90%;
+    color: darkolivegreen;
+}
+
+.caixa-post img{
+    display: block;
+    float: left;
+    width: 100px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+
+/*Caixa categoria*/
+.caixa-categoria{
+    text-align: center;
+}
+.caixa-categoria ul{
+    list-style-type: none;  
+    margin-left: 10px;      
+}
+
+.caixa-categoria ul li a{
+    color: blue;
+    text-decoration: none;
+}
+
+.caixa-categoria ul li a:visited{
+    color: blue;
+}
+
+
+/*Caixa pesquisa*/
+.caixa-pesquisa{
+    margin-bottom: 30px;
+    text-align: center;
+}

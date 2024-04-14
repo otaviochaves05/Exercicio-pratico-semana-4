@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+header {
+    padding: 32px;
+    background-color: cadetblue;
+    color: white;
+    text-align: center;
+    
+}
+
+main{
+    border: 1px dashed black;
+    padding: 64px;
+}
+
+#container{
+    padding: 16px;
+    border-radius: 8px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.caixa{
+    width: 64px;
+    height: 64px;
+    background-color: white;
+}
+
+.retangulo{
+    width: 96px;
+    height: 64px;
+    background-color: white;
+}
+
+.circulo{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.item{
+    background-color: white;
+    margin: 8px;
+    padding: 8px;
+}
