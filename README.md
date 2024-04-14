@@ -1,4 +1,3 @@
-# Projeto1
+# projetos web
 
-Exercicio pratico semana 4. 
-Aplicações responsivas.
+Práticas de desenvolvimento de Interfaces WEB
