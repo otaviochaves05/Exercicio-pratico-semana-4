@@ -6,7 +6,39 @@ const currencys = [
     { name: "peso", surname: "ARS", symbol: "$", rates: { real: 0.0058, dolar: 0.0011, euro: 0.0011, yuan: 0.0083, peso: 1.00 } }
 ]
 
+
+let currency1 = document.querySelector("#currency-1").value
+let currency2 = document.querySelector("#currency-2").value
+let valueToConvert
+
 function changeSelect() {
+    currency1 = document.querySelector("#currency-1").value
+    currency2 = document.querySelector("#currency-2").value
+}
+
+function addValueToConvert(){
+    valueToConvert = document.querySelector("#value-to-convert")
+}
+
+
+switch (currency1){
+
+    case 'real':
+        //convertReal();
+        break;
+    case 'dolar':
+        //convertDolar();
+        break;
+
+    case 'euro':
+        //convertEuro();
+        break;
+    case 'yuan':
+        //convertYuan();
+        break;
+    case 'peso':
+        //convertPeso();
+        break;
 
 }
 
