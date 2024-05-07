@@ -9,21 +9,20 @@ const currencys = [
 
 let currency1 = document.querySelector("#currency-1").value
 let currency2 = document.querySelector("#currency-2").value
-let valueToConvert
+
 
 function changeSelect() {
     currency1 = document.querySelector("#currency-1").value
     currency2 = document.querySelector("#currency-2").value
 }
 
-let button = document.querySelector("#confirm")
-
 
 function convert(){
     
+ 
 }
 
-
+let button = document.querySelector("#confirm")
 button.addEventListener("click", convert)
 
 
