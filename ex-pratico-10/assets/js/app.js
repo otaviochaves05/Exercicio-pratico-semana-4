@@ -16,29 +16,17 @@ function changeSelect() {
     currency2 = document.querySelector("#currency-2").value
 }
 
-function addValueToConvert(){
-    valueToConvert = document.querySelector("#value-to-convert")
+let button = document.querySelector("#confirm")
+
+
+function convert(){
+    
 }
 
 
-switch (currency1){
+button.addEventListener("click", convert)
 
-    case 'real':
-        //convertReal();
-        break;
-    case 'dolar':
-        //convertDolar();
-        break;
 
-    case 'euro':
-        //convertEuro();
-        break;
-    case 'yuan':
-        //convertYuan();
-        break;
-    case 'peso':
-        //convertPeso();
-        break;
 
-}
+
 
