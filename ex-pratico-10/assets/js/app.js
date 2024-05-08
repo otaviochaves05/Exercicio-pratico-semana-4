@@ -9,19 +9,23 @@ const currencys = [
 
 
 function changeSelect() {
-    let currency1 = document.querySelector("#currency-1").value;
-    let currency2 = document.querySelector("#currency-2").value;
-    console.log(currency1);
-    console.log(currency2);
+    let currency1Value = document.querySelector("#currency-1").value;
+    let currency2Value = document.querySelector("#currency-2").value;
+    console.log(currency1Value);
+    console.log(currency2Value);
 }
-
 
 let button = document.querySelector("#confirm")
 button.addEventListener("click", convert)
 
-function convert(currency1, currency2) {
+function convert(currency1Value, currency2Value) {
+    let userInput = document.querySelector("#value-to-convert").value;
+    console.log(userInput);
 
-
+    for (let i=0; i<currencys.length; i++){
+        if (currencys[i].name == currency1Value)
+        aaaaa
+    }
 }
 
 
