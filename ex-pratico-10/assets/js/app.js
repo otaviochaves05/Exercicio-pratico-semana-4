@@ -6,31 +6,56 @@ const currencys = [
     { name: "peso", surname: "ARS", symbol: "$", rates: { real: 0.0058, dolar: 0.0011, euro: 0.0011, yuan: 0.0083, peso: 1.00 } }
 ]
 
+let cotacaoOrigem = "";
+let cotacaoDestino = "";
 
+const valorInput = document.querySelector("#value-to-convert"); 
+const cotacaoOrigemInput = document.querySelector("#currency-1");
+const cotacaoDestinoInput = document.querySelector("#currency-2");
 
 function changeSelect() {
-    let currency1Value = document.querySelector("#currency-1").value;
-    let currency2Value = document.querySelector("#currency-2").value;
-    console.log(currency1Value);
-    console.log(currency2Value);
+    cotacaoOrigem = cotacaoOrigemInput.value;
+    cotacaoDestino = cotacaoDestinoInput.value;
 }
 
-let button = document.querySelector("#confirm")
-button.addEventListener("click", convert)
 
-function convert(currency1Value, currency2Value) {
-    let userInput = document.querySelector("#value-to-convert").value;
-    console.log(userInput);
+function convert() {
 
-    for (let i=0; i<currencys.length; i++){
-        if (currencys[i].name == currency1Value)
-        aaaaa
+    let valorOrigem = parseFloat(valorInput.value);
+
+
+    for (let i = 0; i < currencys.length; i++) {
+
+        console.log(currencys[i].rates[cotacaoDestino]);
+
+        if (currencys[i].name == cotacaoOrigem) {
+
+            let valorDestino =  parseFloat((currencys[i].rates[cotacaoDestino]))
+            let result = valorOrigem * valorDestino;  
+            
+            console.log(result);
+            
+        }
+        
     }
+    
 }
 
 
+window.addEventListener("load", () => {
+    let button = document.querySelector("#confirm")
+    button.addEventListener("click", () => { convert() });
+});
 
 
 
 
+
+// for (let i = 0; i <= currencys.length; i++) {
+//     if (currencys[i].name == currency1Value) {
+
+//     }
+
+
+// }
 
