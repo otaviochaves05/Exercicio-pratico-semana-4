@@ -26,7 +26,7 @@ function convert() {
 
     for (let i = 0; i < currencys.length; i++) {
 
-        console.log(currencys[i].rates[cotacaoDestino]);
+        // console.log(currencys[i].rates[cotacaoDestino]);
 
         if (currencys[i].name == cotacaoOrigem) {
 
@@ -34,13 +34,17 @@ function convert() {
             let result = valorOrigem * valorDestino;  
             
             console.log(result);
-            
+
+            mostrarResultado(result)
         }
         
     }
     
 }
 
+function mostrarResultado(result){
+    document.querySelector("#result").innerText = "Resultado: " + result;
+}
 
 window.addEventListener("load", () => {
     let button = document.querySelector("#confirm")
